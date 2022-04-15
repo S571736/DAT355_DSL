@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated timedStateMachine -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="timedStateMachine.presentation.TimedStateMachineModelWizardID"
+            name="%_UI_TimedStateMachineModelWizard_label"
+            class="timedStateMachine.presentation.TimedStateMachineModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/TimedStateMachineModelFile.gif">
+         <description>%_UI_TimedStateMachineModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated timedStateMachine -->
+      <editor
+            id="timedStateMachine.presentation.TimedStateMachineEditorID"
+            name="%_UI_TimedStateMachineEditor_label"
+            icon="icons/full/obj16/TimedStateMachineModelFile.gif"
+            extensions="timedstatemachine"
+            class="timedStateMachine.presentation.TimedStateMachineEditor"
+            contributorClass="timedStateMachine.presentation.TimedStateMachineActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
